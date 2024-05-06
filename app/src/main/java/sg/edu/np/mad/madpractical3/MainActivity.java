@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         // Receive the random integer passed from ListActivity
         int randomInt = getIntent().getIntExtra("randomInt", -1); // Default to -1 if no data passed
 
-        // Initialize a new User object
+        // Initialize a new User objectssss
         Userr user = new Userr("MAD PRACTICAL", "MAD Developer", 1, false);
 
         // Get the TextViews and Button from the layout
