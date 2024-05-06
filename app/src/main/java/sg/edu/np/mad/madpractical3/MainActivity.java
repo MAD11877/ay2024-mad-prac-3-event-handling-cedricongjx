@@ -17,19 +17,12 @@ public class MainActivity extends AppCompatActivity {
         // Receive the random integer passed from ListActivity
         int randomInt = getIntent().getIntExtra("randomInt", -1); // Default to -1 if no data passed
 
-        // Initialize a new User objectssss
-        Userr user = new Userr("MAD PRACTICAL", "MAD Developer", 1, false);
-
         // Get the TextViews and Button from the layout
-        TextView tvName = findViewById(R.id.textView);
-        TextView tvDescription = findViewById(R.id.textView3);
-        Button btnFollow = findViewById(R.id.button);
+        TextView tvRandom = findViewById(R.id.textView2); // Assuming textView2 displays "Hello World!"
         Button btnMessage = findViewById(R.id.button2); // Ensure this ID matches your layout XML
 
-        // Display the name with the random integer
-        tvName.setText(user.name + " " + randomInt);
-        tvDescription.setText(user.description);
-        btnFollow.setText(user.followed ? "Unfollow" : "Follow");
+        // Replace "Hello World!" with the random integer
+        tvRandom.setText(String.valueOf("MAD " + randomInt));
 
         // Setting up the event listener for the Message button
         btnMessage.setOnClickListener(new View.OnClickListener() {
