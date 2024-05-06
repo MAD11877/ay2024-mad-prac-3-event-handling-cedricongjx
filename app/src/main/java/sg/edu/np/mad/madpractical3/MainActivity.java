@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnMessage = findViewById(R.id.button2); // Ensure this ID matches your layout XML
 
         // Replace "Hello World!" with the random integer
-        tvRandom.setText(String.valueOf("MAD " + randomInt));
+        tvRandom.setText(String.valueOf("MAD" + "" + randomInt));
 
         // Setting up the event listener for the Message button
         btnMessage.setOnClickListener(new View.OnClickListener() {
